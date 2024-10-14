@@ -20,7 +20,6 @@ import (
 var encryptionKey []byte
 
 func main() {
- 	// Load the .env file
   // Load the .env file
      err := godotenv.Load()
      if err != nil {
