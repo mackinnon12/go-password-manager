@@ -88,7 +88,7 @@ func addPassword(db *sql.DB) {
 
 func generatePassword(length int) string {
 	fmt.Println("Generating password...")
-	var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,-!@#$%^&*()_+=<>?/{}[]|~"
 	var password string
 	for i := 0; i < length; i++ {
 		password += string(chars[mrand.Intn(len(chars))])
